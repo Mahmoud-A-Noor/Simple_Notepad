@@ -1,0 +1,108 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp scrollPane1::l::653:x}"
+			"$verticalGroup": "par l {comp scrollPane1::l::501:x}"
+		} ) {
+			name: "this"
+			"title": "NotePad(M)"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea1"
+					addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "textArea1KeyPressed", true ) )
+				} )
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "File"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "newfile"
+						"text": "NewFile"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 78, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "newfileActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "OpenFile"
+						"text": "OpenFile"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 79, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem2ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "SaveFile"
+						"text": "SaveFile"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 83, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem3ActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem3ActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SaveFileActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "SaveFileAs"
+						"text": "SaveAs"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 83, 195, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem4ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Print"
+						"text": "Print"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 80, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "PrintActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Exit"
+						"text": "Exit"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 69, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ExitActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "Edit"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem6"
+						"text": "Cut"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 88, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem6ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem7"
+						"text": "Copy"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 67, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem7ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem8"
+						"text": "Past"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 86, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem8ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem9"
+						"text": "SelectAll"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 65, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem9ActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": "Coordinate"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem10"
+						"text": "ChangeColor"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 67, 520, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem10ActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem10ActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 5 )
+			"size": new java.awt.Dimension( 655, 555 )
+		} )
+	}
+}
